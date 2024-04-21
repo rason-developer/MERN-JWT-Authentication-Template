@@ -1,13 +1,15 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import Footer from '../controllers/Footer'
+import Navbar from '../controllers/Navbar'
 
 const Main = () => {
   return (
     <>
-             <nav>Nav bar</nav>
+             <Navbar/>
              <Outlet></Outlet>
-            <footer> footer</footer>
-    </>
+            <Footer/>
+  </>
   )
 }
 

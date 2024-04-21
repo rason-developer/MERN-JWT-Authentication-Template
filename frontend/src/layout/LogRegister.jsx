@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Outlet } from 'react-router-dom'
+import Footer from '../controllers/Footer'
 
 export class LogRegister extends Component {
   render() {
@@ -7,7 +8,7 @@ export class LogRegister extends Component {
         <>
              <nav>Nav bar</nav>
              <Outlet></Outlet>
-            <footer> footer</footer>
+            <Footer></Footer>
         </>
     )
   }
