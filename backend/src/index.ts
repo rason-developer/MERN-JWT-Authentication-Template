@@ -10,6 +10,8 @@ import { CONNECTION_URL } from './db/connection';
 const app = express();
 
 app.use(cors());
+app.use(express.static('public'));
+app.use(express.json());
 app.use(morgan('tiny'));
 
 const server = http.createServer(app);
