@@ -1,4 +1,3 @@
-Certainly! Here's a sample `README.md` file for your MERN and TypeScript stack JWT authentication template project:
 
 ```markdown
 # MERN & TypeScript JWT Authentication Template
@@ -120,9 +119,3 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
-
-*Happy coding!*
-```
-
-Feel free to customize the `README.md` file according to your specific project details and preferences.
