@@ -5,9 +5,15 @@ import morgan from 'morgan';
 import http from "http";
 import router from  "./routes";
 import mongoose from "mongoose";
-import { CONNECTION_URL } from './db/connection';
+import dotenv from 'dotenv';
 
+
+dotenv.config();
+const CONNECTION_URL = process.env.MONGO_URI;
+console.log(CONNECTION_URL);
+const PORT = process.env.PORT || 8080;
 const app = express();
+
 
 app.use(cors());
 app.use(express.static('public'));
@@ -16,15 +22,20 @@ app.use(morgan('tiny'));
 
 const server = http.createServer(app);
 
-server.listen(4455, () => {
-    console.log("Server Running on http://localhost:4455/");
+server.listen(PORT, () => {
+    console.log(`Server Running on http://localhost:${PORT}/`);
 });
 
 mongoose.Promise = Promise;
-mongoose.connect(CONNECTION_URL);
-mongoose.connection.on("error", (error:Error) => {
-    console.log(error);
-})
+try {
+    mongoose.connect(CONNECTION_URL);
+    mongoose.connection.on("error", (error:Error) => {
+        console.log(error);
+    })
+}catch(err) {
+    console.log(err);
+}
+
 
 app.use('/', router());
 
