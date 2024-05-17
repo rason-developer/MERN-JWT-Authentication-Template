@@ -1,6 +1,14 @@
 
+
 ```markdown
 # MERN & TypeScript JWT Authentication Template
+
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node-dot-js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=json-web-tokens&logoColor=white)
 
 This is a template for building a JWT authentication system using the MERN (MongoDB, Express.js, React, Node.js) stack with TypeScript. This project includes endpoints for user signup and login.
 
@@ -81,7 +89,7 @@ PORT=5000
     npm start
     ```
 
-The backend server will run on `http://localhost:PORT` and the frontend development server will run on `http://localhost:3000`.
+The backend server will run on `http://localhost:5000` and the frontend development server will run on `http://localhost:3000`.
 
 ## Project Structure
 
